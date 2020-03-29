@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bill Calculator</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+      
+        
+        <div class="container">
+              
+            <h2>Bill Calculator</h2>
+
+            <div class="calculator">
+            
+            <form>
+                
+                    <!-- ######  NAME  ###########   -->
+                <p>Customer Name</p>
+                    <input class="inputForm" id="name" type="text" placeholder="     --  Name  --">
+                
+                
+                
+                    <!-- ######  AMOUNT  ###########   -->
+                <p >BILL AMOUNT</p>
+                &#8377; <input id="amount" class="inputFormSpecial"  type="text" placeholder="--Enter the amount here--">
+                
+                
+                
+                    <!-- ######  TIP  ###########   -->
+                <p>Tip Calculator</p>
+                
+            <select class="inputForm" id="tip">
+                    
+                <option disabled selected value="0" class="start">  -- Choose an Option --  </option>
+                <option value="0.2">  20&#37; &#45; I am Impressed</option>
+                <option value="0.15">  15&#37; &#45; It was Good</option>
+                <option value="0.10"> 10&#37; &#45; OK OK</option>
+                <option value="0.0">  5&#37; &#45;  Bad</option>
+                <option value="0"> 0&#37; &#45;  I hated that</option>
+                
+            </select>
+                
+                    <!-- ######  PAYMENT METHOD  ###########   -->
+                
+                <p> Payment Method </p>
+            <select class="inputForm" id="discount">
+                <option disabled selected value="-1" class="start"> -- Choose Method-- </option>
+                <option value="0"> Cash</option>
+                <option value="0.10"> Card (10% off)</option>
+                <option value="0.15"> UPI (15% off)</option>
+            </select>
+                
+                
+                    <!-- ######  CONTACT DETAILS  ###########   -->
+                <p> Mobile Number </p>
+                <input id=contact class="inputForm" type="Text" placeholder=" --Enter Mobile Number-- ">
+            </form>
+                
+                <button type="button" id="calculate" onclick="calculateBill()"> Calculate </button>
+                
+                <h5 class="footer"> *** 18% CGST & SGST apply *** </h5>
+            </div>
+            
+
+            <!--  ######### DISPLAY ############   -->
+            <div id="display">
+               Amount: <p id="price">0.00</p>
+            </div>
+            
+        </div>
+
+        
+    </body>
+</html>

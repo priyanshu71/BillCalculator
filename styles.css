@@ -1,0 +1,128 @@
+body {
+    width: auto;
+    height: auto;
+    background-image: url("bckimg1.jpg");
+    font-family: cursive;
+    image-resolution: from-image;
+}
+   
+
+   
+
+.container {
+    display: block;
+    height: 840px;
+    width: 350px;
+    background: linear-gradient( to right bottom , pink , blue);
+    margin: auto;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+h2{
+    background: black;
+    font-weight: 1500;
+    color: aliceblue;
+    padding: 10px 100px;
+    margin-top: 15px;
+    border-radius: 30px;
+    font-size: 22px;
+    
+}
+
+.calculator {
+/*    background-color: greenyellow;*/
+    text-align: left;
+    margin: 10px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+form p {
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+
+p:hover{
+    color: red;
+    transition: all ,  300ms ;
+    transition-timing-function: ease-in-out;
+}
+
+input.inputForm {
+    padding: 6px;
+    margin-left: 35px;
+    font-size: 16px;
+    
+}
+input.inputFormSpecial {
+    padding: 6px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+::placeholder{
+    display: block;
+    font-family: sans-serif;
+    color: black;
+    opacity: 35%;
+}
+
+option{
+    font-family: sans-serif;
+    color: black;
+}
+
+select.inputForm {
+    padding: 6px;
+    margin-left: 35px;
+    font-size: 16px;
+    
+}
+
+select option:disabled {
+    color: rgba(90,90,90,0.5);
+}
+
+button {
+    padding: 10px;
+    margin-left: 90px;
+    margin-top: 25px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    transition: all 400ms ease-in-out ;
+}
+
+button:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+button:active {
+    font-size: 16px;
+}
+
+.footer {
+    font-size: 10px;
+    float: bottom;
+}
+
+#display {
+    
+    background-color: yellow;
+    font-weight: bolder;
+    font-size: 36px;
+    padding: 10px;
+    color: deeppink;
+}
