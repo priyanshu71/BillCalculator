@@ -38,6 +38,7 @@ function calculateBill() {
     
      document.getElementById("display").style.display = "block";
   document.getElementById("price").innerHTML = total;
+    document.getElementById("successTransaction").innerHTML= name + ", Thanks for Shopping !!!";
    
 }
        
