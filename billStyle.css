@@ -1,0 +1,43 @@
+
+.container {
+    margin: auto;
+    padding: 20px;
+    height: auto;
+    width: 400px;
+    border-style: solid;
+    background: rgba(80,80,80,0.20);
+}
+
+.restaurant h2 ,p {
+    text-align: center;
+    line-height: 3px;
+}
+
+.blockOne 
+{
+    text-align: left;
+}
+span.Inline {
+    text-align: left;
+    display: inline;
+    padding: 15px;
+    
+    
+}
+
+.Invoice {
+    text-align: center;
+}
+
+.menu{
+    text-align: right;
+   padding-right: 5px;
+    margin-right: 10px;
+}
+.menu span{
+    margin-left: 8px;
+}
+
+.menuParticulars {
+    text-align:left;
+}

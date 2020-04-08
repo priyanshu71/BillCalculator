@@ -1,27 +1,29 @@
-body {
-    width: auto;
-    height: auto;
-    background-image: url("shawn-ang-nmpW_WwwVSc-unsplash.jpg");
-    background-size: cover;
-    font-family: cursive;
+body{
+    font-family: "Lucida Sans" sans-serif;
+    font-weight: bold;
+     background-image: url("shawn-ang-nmpW_WwwVSc-unsplash.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
   
 }
-   
-
-   
 
 .container {
+    position: relative;
     display: block;
-    height: 840px;
+    height: 750px;
     width: 350px;
-    background: linear-gradient( to right bottom , pink , blue);
+    background: linear-gradient( to right bottom , pink , rgb(128,107,235));
     margin: auto;
     text-align: center;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
+/*
+    border-style: solid;
+    border-color: red;
+*/
+    box-shadow: 5px 3px 15px 5px purple;
 }
 
 h2{
@@ -37,6 +39,7 @@ h2{
 
 .calculator {
 /*    background-color: greenyellow;*/
+    
     text-align: left;
     margin: 10px;
     margin-top: 8px;
@@ -65,6 +68,7 @@ input.inputForm {
     font-size: 16px;
     
 }
+
 input.inputFormSpecial {
     padding: 6px;
     margin-left: 20px;
@@ -112,6 +116,8 @@ button:hover {
 }
 
 button:active {
+    background-color: red;
+    color: white;
     font-size: 16px;
 }
 
@@ -120,15 +126,51 @@ button:active {
     float: bottom;
 }
 
-#display {
-    
-    background-color: yellow;
+.displayPrice {
+    font-family: serif;
+    background-color: black;
     font-weight: bolder;
-    font-size: 36px;
+    font-size: 32px;
     padding: 10px;
-    color: deeppink;
+    color: white;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+/*
+    border-style: solid;
+    border-color: red;
+*/
+}
+
+ a {
+    font-size: 16px;
+    color: deepskyblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: lawngreen;
 }
 
 #successTransaction {
     font-size: 20px;
+}
+
+.pagecounts {
+  position: absolute;
+   top: 60px;
+    right: 8%;
+}
+
+@media only screen and (max-width:600px) {
+    
+    .pagecounts {
+        
+        float: right;
+        position: relative;
+        bottom: 60px;
+    }
+    
+    .pagecounts p{
+        color: black;
+    }
 }
