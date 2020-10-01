@@ -1,3 +1,6 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .container {
     margin: auto;
@@ -5,39 +8,67 @@
     height: auto;
     width: 400px;
     border-style: solid;
-    background: rgba(80,80,80,0.20);
+    background: rgba(80, 80, 80, 0.20);
 }
 
-.restaurant h2 ,p {
+.restaurant h2,
+p {
     text-align: center;
     line-height: 3px;
 }
 
-.blockOne 
-{
+.blockOne {
     text-align: left;
 }
+
 span.Inline {
     text-align: left;
     display: inline;
     padding: 15px;
-    
-    
 }
 
 .Invoice {
     text-align: center;
 }
 
-.menu{
+.menu {
     text-align: right;
-   padding-right: 5px;
+    padding-right: 5px;
     margin-right: 10px;
 }
-.menu span{
+
+.menu span {
     margin-left: 8px;
 }
 
 .menuParticulars {
-    text-align:left;
+    text-align: left;
+}
+
+.btnClass {
+    text-align: center;
+}
+
+button {
+    outline: none;
+    padding: 10px;
+    margin: 15px;
+    width: 150px;
+    background-color: green;
+    font-size: 20px;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    transition: all 400ms ease-in-out;
+}
+
+button:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+@media only print {
+    button {
+        display: none;
+    }
 }
