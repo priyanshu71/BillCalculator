@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bill Calculator</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script type="text/javascript" src="script.js"></script>
-    </head>
-    <body>
-      
-        
-        <div class="container">
-              
-            <h2>Bill Calculator</h2>
 
-            <div class="calculator">
-            
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h2>Bill Calculator</h2>
+
+        <div class="calculator">
+
             <form>
-                
-                    <!-- ######  NAME  ###########   -->
+
+                <!-- ######  NAME  ###########   -->
                 <p>Customer Name</p>
-                    <input class="inputForm" id="name" type="text" placeholder="     --  Name  --">
-                
-                
-                
-                    <!-- ######  AMOUNT  ###########   -->
-                <p >BILL AMOUNT</p>
-                &#8377; <input id="amount" class="inputFormSpecial"  type="text" placeholder="--Enter the amount here--">
-                
-                
-                
-                    <!-- ######  TIP  ###########   -->
+                <input class="inputForm" id="name" type="text" placeholder="     --  Name  --">
+
+
+
+                <!-- ######  AMOUNT  ###########   -->
+                <p>BILL AMOUNT</p>
+                <input id="amount" class="inputFormSpecial" type="text" placeholder="--Enter the amount here--">&nbsp;&nbsp; &#8377;
+
+
+
+                <!-- ######  TIP  ###########   -->
                 <p>Tip Calculator</p>
-                
-            <select class="inputForm" id="tip">
+
+                <select class="inputForm" id="tip">
                     
                 <option disabled selected value="0" class="start">  -- Choose an Option --  </option>
                 <option value="0.2">  20&#37; &#45; I am Impressed</option>
@@ -43,49 +45,51 @@
                 <option value="0"> 0&#37; &#45;  I hated that</option>
                 
             </select>
-                
-                    <!-- ######  PAYMENT METHOD  ###########   -->
-                
+
+                <!-- ######  PAYMENT METHOD  ###########   -->
+
                 <p> Payment Method </p>
-            <select class="inputForm" id="discount">
+                <select class="inputForm" id="discount">
                 <option disabled selected value="-1" class="start"> -- Choose Method-- </option>
                 <option value="0"> Cash</option>
                 <option value="0.10"> Card (10% off)</option>
                 <option value="0.15"> UPI (15% off)</option>
             </select>
-                
-                
-                    <!-- ######  CONTACT DETAILS  ###########   -->
+
+
+                <!-- ######  CONTACT DETAILS  ###########   -->
                 <p> Mobile Number </p>
                 <input id=contact class="inputForm" type="Text" placeholder=" --Enter Mobile Number-- ">
             </form>
-                
+            <div class="buttonf">
                 <button type="button" id="calculate" onclick="calculateBill()"> Calculate </button>
-                
-                <h5 class="footer"> *** 18% CGST & SGST apply *** </h5>
             </div>
-            
+            <h5 class="footer"> *** 18% CGST & SGST apply *** </h5>
+        </div>
 
-             <!--  ######### DISPLAY ############   -->
-            <div id="display" class="displayPrice">
-               Amount: <p id="price">0.00</p>
-                    <p id="successTransaction"></p>
-                    <a href="bill.html" target="_blank">Click here to Print Order-bill</a>
-            </div>
-            
-            
-            
-      </div>
 
-                 <!-- ############# PAGE COUNTS ###############   -->
-        
-        <div class="pagecounts">
-            <p style=" background: black; color: white; font-size: 28px; padding: 5px;">&#128518; PAGEHITS &#128540;</p>
-            
-            <a href="https://www.hitwebcounter.com" target="_blank">
-            <img src="https://hitwebcounter.com/counter/counter.php?page=7217606&style=0025&nbdigits=5&type=page&initCount=10" title="User Stats" Alt="PHP Hits Count"   border="0" >
-        </a> 
-            </div>    
-        
-    </body>
+        <!--  ######### DISPLAY ############   -->
+        <div id="display" class="displayPrice">
+            Amount:
+            <p id="price">0.00</p>
+            <p id="successTransaction"></p>
+            <a href="bill.html" target="_blank">Click here to Print Order-bill</a>
+        </div>
+
+
+
+    </div>
+
+    <!-- ############# PAGE COUNTS ###############   -->
+
+    <div class="pagecounts">
+        <p style=" background: black; color: white; font-size: 28px; padding: 5px;">&#128518; PAGEHITS &#128540;</p>
+
+        <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7217606&style=0025&nbdigits=5&type=page&initCount=10" title="User Stats" Alt="PHP Hits Count" border="0">
+        </a>
+    </div>
+
+</body>
+
 </html>
